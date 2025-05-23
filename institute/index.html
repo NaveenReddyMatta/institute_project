@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DevOps Training Institute</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>DevOps Training Institute</h1>
+      <nav>
+        <ul>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="#registration">Register</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="banner">
+    <h2>Master DevOps, Shape the Future</h2>
+    <p>Accelerate your career with hands-on DevOps skills and certifications</p>
+    <button onclick="document.getElementById('courses').scrollIntoView()">Explore Courses</button>
+  </section>
+
+  <section id="courses" class="courses">
+    <h2>Top DevOps Courses</h2>
+    <div class="course-grid">
+      <div class="course-card">
+        <h3>CI/CD Pipelines</h3>
+        <p>Automate development with Jenkins, GitHub Actions, and GitLab CI.</p>
+      </div>
+      <div class="course-card">
+        <h3>Docker & Kubernetes</h3>
+        <p>Master containerization and orchestration using real-world use cases.</p>
+      </div>
+      <div class="course-card">
+        <h3>Cloud DevOps with AWS</h3>
+        <p>Learn infrastructure automation and monitoring in the AWS ecosystem.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="registration" class="registration">
+    <h2>Register Today</h2>
+    <form class="registration-form" onsubmit="submitForm(event)">
+      <input type="text" placeholder="Full Name" required />
+      <input type="email" placeholder="Email Address" required />
+      <input type="tel" placeholder="Phone Number" required />
+      <select required>
+        <option value="">Select Course</option>
+        <option value="CI/CD Pipelines">CI/CD Pipelines</option>
+        <option value="Docker & Kubernetes">Docker & Kubernetes</option>
+        <option value="Cloud DevOps with AWS">Cloud DevOps with AWS</option>
+      </select>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 DevOps Training Institute. All rights reserved.</p>
+  </footer>
+
+  <div class="whatsapp-icon" id="whatsapp-icon">
+    <a href="https://wa.me/9030040794" target="_blank">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
